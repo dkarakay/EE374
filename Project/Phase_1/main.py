@@ -43,12 +43,14 @@ def termproject(text_path: str, library_path: str):
     with open(library_path, "r") as file:
         reader = csv.reader(file)
 
-        # Exclude title
+        # Exclude title row
         title_row = next(reader)
+
         for row in reader:
             if row[0]:
                 library[row[0]] = row[1:]
 
+    # Print library data
     # print(f"Library from {library_path}", "\n", library, "\n")
 
     acsr_name = text["acsr_name"]
@@ -64,14 +66,14 @@ def termproject(text_path: str, library_path: str):
 
     # print(f"ACSR name: {acsr_name}", f"ACSR data: {acsr_data}", "\n")
 
-    # print(
-    #    f"ACSR outside diameter in: ",
-    #    acsr_outside_diameter_in,
-    #    " SI: ",
-    #    acsr_outside_diameter_si,
-    # )
+    print(
+        f"ACSR outside diameter in: ",
+        acsr_outside_diameter_in,
+        " SI: ",
+        acsr_outside_diameter_si,
+    )
 
-    length_of_line = int(text["length_of_line"]) * 1000
+    length_of_line_m = int(text["length_of_line"]) * 1000
 
     # Add my student ID
     output = ["2443307"]
@@ -80,15 +82,14 @@ def termproject(text_path: str, library_path: str):
     output.append(text["v_base"])
     output.append(text["number_of_bundles"])
     output.append(text["bundle_distance"])
-    output.append(length_of_line)
+    output.append(length_of_line_m)
     output.append(acsr_name)
     output.append(acsr_outside_diameter_si)
-    output.append(acsr_ac_resistance_o§hm_over_m)
+    output.append(acsr_ac_resistance_ohm_over_m)
     output.append(acsr_gmr_si)
-
-    print(output)
 
     return output
 
 
-termproject("Input_file_example.txt", "library.csv")
+output = termproject("Input_file_example.txt", "library.csv")
+print(output)
