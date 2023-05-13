@@ -83,7 +83,7 @@ def termproject(text_path: str, library_path: str):
     output.append(length_of_line)
     output.append(acsr_name)
     output.append(acsr_outside_diameter_si)
-    output.append(acsr_ac_resistance_ohm_over_m)
+    output.append(acsr_ac_resistance_o§hm_over_m)
     output.append(acsr_gmr_si)
 
     print(output)
