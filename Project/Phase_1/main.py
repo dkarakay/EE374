@@ -1,3 +1,8 @@
+# Created main.py on Tue May 16 2023
+#
+# Author: Deniz Karakay (2443307)
+# Copyright (c) 2023 Deniz Karakay
+
 import csv
 
 
@@ -80,9 +85,13 @@ def termproject(text_path: str, library_path: str):
     # Add my student ID
     output = [2443307]
 
+    # Convert the values to SI from MVA to VA and kV to V
+    s_base_si = s_base * 1000000
+    v_base_si = v_base * 1000
+
     # Append the values to the output list
-    output.append(text["s_base"])
-    output.append(text["v_base"])
+    output.append(s_base_si)
+    output.append(v_base_si)
     output.append(text["number_of_bundles"])
     output.append(text["bundle_distance"])
     output.append(length_of_line_m)
@@ -94,5 +103,9 @@ def termproject(text_path: str, library_path: str):
     return output
 
 
-output = termproject("Input_file_example.txt", "library.csv")
-print(output)
+if __name__ == "__main__":
+    # Run the function
+    output = termproject("Input_file_example.txt", "library.csv")
+
+    # Print the output
+    print(output)
