@@ -10,5 +10,5 @@ This repository contains codes for [EE442 Fundamentals of Power Systems and Elec
 - [Phase 1 Code](https://github.com/dkarakay/EE374/blob/main/Project/Phase_1/main.py)
 - [Phase 2 Code](https://github.com/dkarakay/EE374/blob/main/Project/Phase_2/termproject.py)
 - [Phase 1 Report](https://github.com/dkarakay/EE374/blob/main/Project/Phase_1/ee374_term_project_phase1_2443307.pdf)
-- [Phase 2 Report](https://github.com/dkarakay/EE447/blob/main/Project/preliminary_report.pdf)
+- [Phase 2 Report](https://github.com/dkarakay/EE374/blob/main/Project/Phase_2/ee374_term_project_phase_2.pdf)
 
