@@ -1,6 +1,6 @@
 # EE374 Fundamentals of Power Systems and Electrical Equipment
 
-This repository contains codes for [EE442 Fundamentals of Power Systems and Electrical Equipment](https://catalog.metu.edu.tr/course.php?course_code=5670374) course at Middle East Technical University.
+This repository contains codes for [EE374 Fundamentals of Power Systems and Electrical Equipment](https://catalog.metu.edu.tr/course.php?course_code=5670374) course at Middle East Technical University.
 
 
 ## Project
